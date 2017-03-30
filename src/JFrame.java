@@ -111,8 +111,10 @@ public class JFrame extends javax.swing.JFrame {
         minValue = Double.parseDouble(minValueEntered.getText());
         maxValue = Double.parseDouble(maxValueEntered.getText());
         
+        //sets range for random number
         randomValue = (int) Math.floor(Math.random() * (maxValue - minValue + 1) + minValue);
         
+        //displays random number
         randomResult.setText("Your totally amazing and cool random number is " + Integer.toString(randomValue));
         
     }//GEN-LAST:event_randomizeActionPerformed
